@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Multi Vendas</title>
+<style>
+* {
+    box-sizing: border-box;
+}
+.header, .footer {
+    background-color: black;
+    color: red;
+    padding: 15px;
+}
+.column {
+    float: left;
+    padding: 15px;
+}
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.menu {
+    width: 25%;
+}
+.content {
+    width: 75%;
+}
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.menu li {
+    padding: 8px;
+    margin-bottom: 8px;
+    background-color: black;
+    color: #ffffff;
+}
+.menu li:hover {
+    background-color: #0099cc;
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Multi Vendas</h1>
+</div>
+
+<div class="clearfix">
+  <div class="column menu">
+    <ul>
+      <li><a href="login.html">Login/Cadastro</a></li>
+      <li><a href="#Produtos">Nossos produtos</a></li>
+      <li>Buscar produtos</li>
+      <li><a href="sobre_nos.html">Sobre Nós</a></li>
+    </ul>
+  </div>
+
+  <div class="column content">
+    <iframe width="1000" height="400" src="https://www.youtube.com/embed/1vmMGv1ncPg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>    
+  </div>
+</div>
+
+<div class="footer">
+  <p>Produtos</p>
+</div>
+
+<table id="Produtos">
+    <tr><th>  <img src="images/aspirador.jpg" width="450" heigh="350">  <th> <img src="images/ventilador.jpg" width="450" heigh="350"> <th> <img src="images/ar-condicionado.jpg" width="450" heigh="350">
+    
+    <tr><th> <img src="images/1.jpg" width="450" heigh="350"> <th> <img src="images/vaporizador.jpg" width="450" heigh="350"> <th> <img src="images/escova-eletrica.jpg" width="450" heigh="350">
+  </table>
+
+
+</body>
+</html>
