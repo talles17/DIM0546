@@ -2,16 +2,59 @@
 <html>
 <head>
 <title>Pagina de login.</title>
+<style>
+* {
+    box-sizing: border-box;
+}
+.header, .footer {
+    background-color: black;
+    color: red;
+    padding: 15px;
+}
+.column {
+    float: left;
+    padding: 15px;
+}
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.menu {
+    width: 25%;
+}
+.content {
+    width: 75%;
+}
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.menu li {
+    padding: 8px;
+    margin-bottom: 8px;
+    background-color: black;
+    color: #ffffff;
+}
+.menu li:hover {
+    background-color: #0099cc;
+}
+</style>
 </head>
 <body>
 
-	<form action="/action_page.php">
-  		Login:<br>
-  		<input type="text" name="Login" value=""><br>
-  		Senha:<br>
-  		<input type="text" name="Senha" value=""><br><br>
-  		<input type="submit" value="Submit">
-	</form> 
+<div class="header">
+  <h1>Login</h1>
+</div>
+
+<form action="/action_page.php">
+  	Login:<br>
+  	<input type="text" name="Login" value=""><br>
+  	Senha:<br>
+  	<input type="text" name="Senha" value=""><br><br>
+  	<input type="submit" value="Submit">
+</form> 
 
 	<p>Ainda não tem <a href="cadastrar.html">cadastro?</a></p>
 
